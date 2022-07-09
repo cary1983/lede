@@ -77,6 +77,22 @@ jobs:
           CONFIG_KERNEL_BUILD_USER="OpenWrt-CI"
           CONFIG_KERNEL_BUILD_DOMAIN="Azure"
           EOF
+          
+          cat >> .config <<EOF
+          CONFIG_TARGET_x86=y
+          CONFIG_TARGET_x86_64=y
+          CONFIG_TARGET_x86_64_Generic=y
+          EOF
+          
+          cat >> .config <<EOF
+          CONFIG_TARGET_ROOTFS_EXT4FS=y
+          CONFIG_TARGET_IMAGES_GZIP=y
+          CONFIG_TARGET_ROOTFS_PARTSIZE=8000
+          EOF
+          
+          cat >> .config <<EOF
+          CONFIG_EFI_IMAGES=n
+          EOF
 
           #
           # ===============================================================
