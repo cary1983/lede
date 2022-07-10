@@ -85,7 +85,6 @@ jobs:
           CONFIG_DEFAULT_kmod-igc=y
           CONFIG_DEFAULT_kmod-igb=y
           CONFIG_DEFAULT_kmod-igbvf=y
-          CONFIG_DEFAULT_dnsmasq-full=y
           EOF
           
           cat >> .config <<EOF
@@ -107,7 +106,7 @@ jobs:
           #EOF
           
           cat >> .config <<EOF
-          CONFIG_TARGET_KERNEL_PARTSIZE=30
+          CONFIG_TARGET_KERNEL_PARTSIZE=160
           CONFIG_TARGET_ROOTFS_PARTSIZE=400
           #CONFIG_TARGET_ROOTFS_PARTNAME=""
           CONFIG_PACKAGE_smartdns=y
@@ -123,17 +122,17 @@ jobs:
           
           cat >> .config <<EOF
           CONFIG_PACKAGE_luci-app-firewall=y
-          CONFIG_PACKAGE_luci-app-adbyby-plus=m
-          CONFIG_PACKAGE_luci-app-unblockNeteaseMusic=m
-          CONFIG_PACKAGE_luci-app-wol=m
-          CONFIG_PACKAGE_luci-app-accesscontrol=m
-          CONFIG_PACKAGE_luci-app-wireguard=m
-          CONFIG_PACKAGE_luci-app-samba=m
-          CONFIG_PACKAGE_luci-app-vsftpd=m
-          CONFIG_PACKAGE_luci-app-openvpn=m
-          CONFIG_PACKAGE_luci-app-openvpn-server=m
-          CONFIG_PACKAGE_luci-app-xlnetacc=m
-          CONFIG_PACKAGE_luci-app-vlmcsd=m
+          CONFIG_PACKAGE_luci-app-adbyby-plus=n
+          CONFIG_PACKAGE_luci-app-unblockNeteaseMusic=n
+          CONFIG_PACKAGE_luci-app-wol=n
+          CONFIG_PACKAGE_luci-app-accesscontrol=n
+          CONFIG_PACKAGE_luci-app-wireguard=n
+          CONFIG_PACKAGE_luci-app-samba=n
+          CONFIG_PACKAGE_luci-app-vsftpd=n
+          CONFIG_PACKAGE_luci-app-openvpn=n
+          CONFIG_PACKAGE_luci-app-openvpn-server=n
+          CONFIG_PACKAGE_luci-app-xlnetacc=n
+          CONFIG_PACKAGE_luci-app-vlmcsd=n
           EOF
           
 
