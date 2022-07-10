@@ -90,10 +90,11 @@ jobs:
           
           cat >> .config <<EOF
           CONFIG_TARGET_ROOTFS_SQUASHFS=y
-          CONFIG_TARGET_SQUASHFS_BLOCK_SIZE=1024
-          CONFIG_TARGET_UBIFS_FREE_SPACE_FIXUP=y
-          CONFIG_TARGET_UBIFS_JOURNAL_SIZE=""
+          #CONFIG_TARGET_SQUASHFS_BLOCK_SIZE=1024
+          #CONFIG_TARGET_UBIFS_FREE_SPACE_FIXUP=y
+          #CONFIG_TARGET_UBIFS_JOURNAL_SIZE=""
           CONFIG_TARGET_IMAGES_GZIP=y
+          #CONFIG_PACKAGE_attendedsysupgrade-common=y
           EOF
           
           #cat >> .config <<EOF
