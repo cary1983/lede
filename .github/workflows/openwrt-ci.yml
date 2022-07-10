@@ -121,6 +121,21 @@ jobs:
           #CONFIG_PACKAGE_kmod-usb3=y
           #EOF
           
+          cat >> .config <<EOF
+          CONFIG_PACKAGE_luci-app-firewall=y
+          CONFIG_PACKAGE_luci-app-adbyby-plus=m
+          CONFIG_PACKAGE_luci-app-unblockNeteaseMusic=m
+          CONFIG_PACKAGE_luci-app-wol=m
+          CONFIG_PACKAGE_luci-app-accesscontrol=m
+          CONFIG_PACKAGE_luci-app-wireguard=m
+          CONFIG_PACKAGE_luci-app-samba=m
+          CONFIG_PACKAGE_luci-app-vsftpd=m
+          CONFIG_PACKAGE_luci-app-openvpn=m
+          CONFIG_PACKAGE_luci-app-openvpn-server=m
+          CONFIG_PACKAGE_luci-app-xlnetacc=m
+          CONFIG_PACKAGE_luci-app-vlmcsd=m
+          EOF
+          
 
           #
           # ===============================================================
