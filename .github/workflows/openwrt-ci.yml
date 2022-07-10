@@ -96,6 +96,10 @@ jobs:
           #CONFIG_PACKAGE_attendedsysupgrade-common=y
           EOF
           
+          cat >> .config <<EOF
+          CONFIG_EFI_IMAGES=m
+          EOF
+          
           #cat >> .config <<EOF
           #CONFIG_PACKAGE_kmod-fs-nfs=y
           #CONFIG_PACKAGE_kmod-fs-nfs-common=y
